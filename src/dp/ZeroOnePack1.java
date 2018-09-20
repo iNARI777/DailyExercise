@@ -18,7 +18,7 @@ public class ZeroOnePack1 {
         }
 
         for (int i = 1; i < num; i++) {
-            for (int j = 0; j <= volumn; j++) {
+            for (int j = 1; j <= volumn; j++) {
                 if (weight[i] <= j) {
                     // 添加 i 号物品
                     int a = dp[i - 1][j - weight[i]] + value[i];
