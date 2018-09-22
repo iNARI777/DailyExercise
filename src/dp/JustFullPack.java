@@ -38,6 +38,4 @@ public class JustFullPack {
         int result = justFullPack(volume, weight);
         System.out.println(result);
     }
-
-
 }
