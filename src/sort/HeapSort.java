@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 堆排序
+ * 堆排序（本例为大顶堆）
  * 堆是树的一种，一般树都用显示的表示方法（即用节点和左右两个指针来表示），
  * 但是在这里我们使用数组来隐式的表示这棵树，我们将根节点放在
  * 下标为 0 的地方，这样位于 n 的节点的做孩子的下标为 2n + 1 ，右孩子下标为 2n + 2 ，
@@ -24,7 +24,7 @@ public class HeapSort {
         }
     }
 
-    // 默认以 index 节点的左右子树都是堆！
+    // 要求 index 节点的左右子树都符合堆的定义！
     private static void compareAndSwap(int[] nums, int index, int lastIndex) {
         int maxIndex;
         if (index * 2 + 1 > lastIndex) return;
